@@ -3,6 +3,6 @@
     public interface IRepository
     {
         void AddAccount (DbAccount account);
-        void GetAccountById (int id);
+        DbAccount GetAccountById (int id);
     }
 }
