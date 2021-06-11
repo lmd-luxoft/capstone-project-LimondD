@@ -1,6 +1,6 @@
 ﻿namespace HomeAccounting.BusinessLogic.EF.Domain
 {
-    public class Cach : Account
+    public class Cash : Account
     {
         public int Banknotes
         {

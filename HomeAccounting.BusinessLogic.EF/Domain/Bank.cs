@@ -1,6 +1,6 @@
 ﻿namespace HomeAccounting.BusinessLogic.EF.Domain
 {
-    public class Bank
+    public class Bank : Entity
     {
         public string BIK
         {

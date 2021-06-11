@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace HomeAccounting.BusinessLogic.EF.Domain
 {
-    public class Operation
+    public class Operation : Entity
     {
         public DateTime ExecutionDate
         {
@@ -21,7 +21,7 @@ namespace HomeAccounting.BusinessLogic.EF.Domain
             }
         }
 
-        public IEnumerable<Account> Account
+        public IEnumerable<Account> Accounts
         {
             get => default;
             set

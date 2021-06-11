@@ -2,7 +2,7 @@
 
 namespace HomeAccounting.BusinessLogic.EF.Domain
 {
-    public class PropertyProceChange
+    public class PropertyPriceChange : Entity
     {
         public int Delta
         {

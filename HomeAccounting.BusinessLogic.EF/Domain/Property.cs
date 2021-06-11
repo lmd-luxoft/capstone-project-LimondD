@@ -1,4 +1,6 @@
-﻿namespace HomeAccounting.BusinessLogic.EF.Domain
+﻿using System.Collections.Generic;
+
+namespace HomeAccounting.BusinessLogic.EF.Domain
 {
     public class Property : Account
     {
@@ -19,6 +21,14 @@
         }
 
         public PropertyType Type
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public IEnumerable<PropertyPriceChange> PropertyPriceChanges
         {
             get => default;
             set
