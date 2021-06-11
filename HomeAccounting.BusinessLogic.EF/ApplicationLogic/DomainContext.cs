@@ -33,15 +33,27 @@ namespace HomeAccounting.BusinessLogic.EF.ApplicationLogic
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Account>();
+            modelBuilder.Entity<Account>()
+                .ToTable("Accounts");
+
             modelBuilder.Entity<Bank>();
+
             modelBuilder.Entity<Cash>();
+
             modelBuilder.Entity<Operation>()
                 .HasMany(p => p.Accounts);
+
             modelBuilder.Entity<Property>()
+                .ToTable("Properties")
                 .HasMany(p => p.PropertyPriceChanges);
+
             modelBuilder.Entity<PropertyPriceChange>();
-            modelBuilder.Entity<Deposit>();
+
+            modelBuilder.Entity<Cash>()
+                .ToTable("Cashes");
+
+            modelBuilder.Entity<Deposit>()
+                .ToTable("Deposites");
 
             base.OnModelCreating(modelBuilder);
         }
