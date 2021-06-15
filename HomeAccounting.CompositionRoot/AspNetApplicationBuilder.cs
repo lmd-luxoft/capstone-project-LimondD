@@ -1,5 +1,4 @@
-﻿using HomeAccounting.BusinessLogic;
-using HomeAccounting.BusinessLogic.Contract;
+﻿using HomeAccounting.BusinessLogic.Contract;
 using HomeAccounting.BusinessLogic.EF.ApplicationLogic;
 using HomeAccounting.DataSource;
 using HomeAccounting.DataSource.Contract;
@@ -16,7 +15,7 @@ namespace HomeAccounting.CompositionRoot
 
         protected override void RegisterBusinessLogic()
         {
-            _services.AddTransient<IAccounting, AccountingService>();
+            _services.AddTransient<IAccountingService, BusinessLogic.EF.ApplicationLogic.AccountingService>();
         }
 
         protected override void RegisterDataSource()

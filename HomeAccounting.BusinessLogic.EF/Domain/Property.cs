@@ -4,36 +4,12 @@ namespace HomeAccounting.BusinessLogic.EF.Domain
 {
     public class Property : Account
     {
-        public decimal BasePrice
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public decimal BasePrice { get; set; }
 
-        public string Location
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public string Location { get; set; }
 
-        public PropertyType Type
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public PropertyType Type { get; set; }
 
-        public IEnumerable<PropertyPriceChange> PropertyPriceChanges
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public IEnumerable<PropertyPriceChange> PropertyPriceChanges { get; set; }
     }
 }

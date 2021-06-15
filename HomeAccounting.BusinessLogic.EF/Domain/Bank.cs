@@ -2,28 +2,10 @@
 {
     public class Bank : Entity
     {
-        public string BIK
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public string BIK { get; set; }
 
-        public string CorrespondAccount
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public string CorrespondAccount { get; set; }
 
-        public string Title
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public string Title { get; set; }
     }
 }

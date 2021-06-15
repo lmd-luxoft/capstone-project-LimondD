@@ -2,6 +2,7 @@
 
 namespace HomeAccounting.BusinessLogic.Contract
 {
+    [Obsolete("Класс для корректной работы предыдущих версий приложения")]
     public class Account
     {
         public int Id { get; set; }

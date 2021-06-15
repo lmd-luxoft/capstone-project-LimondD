@@ -2,12 +2,6 @@
 {
     public abstract class Entity
     {
-        public int Id
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public int Id { get; set; }
     }
 }
