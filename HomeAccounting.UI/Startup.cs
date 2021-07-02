@@ -20,6 +20,8 @@ namespace HomeAccounting.UI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            //services.AddMvc();
+                //.AddJsonOptions(options => options.JsonSerializerOptions.PropertyNamingPolicy = null);
             AspNetApplicationBuilder app = new AspNetApplicationBuilder(services);
             app.Build();
         }
